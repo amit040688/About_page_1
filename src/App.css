@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Inter', sans-serif !important;
+}
+.container{
+  max-width: 1024px !important;
+}
+.about_banner {
+border-bottom: 1px solid skyblue;
+background-image: linear-gradient(to bottom, #C9EBFC, #ffffff);
+}
+.about_banner_left p {
+font-size: 33px;
+color: #000000;
+padding-left: 5px;
+font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about_banner_left h1 {
+color: #17A6E8;
+font-weight: 700;
+font-size: 50px;
+letter-spacing: .5px;
+}
+.empowering h2.normal {
+font-weight:400;
+color:#333
+}
+.about_banner_right {
+  text-align: -webkit-right;
+}
+.empowering .highlight{
+  color:#333
+}
+.empowering .highlight h2 {
+font-weight: 700;
+font-size: 2.2rem;
+}
+.empowering .highlight span{
+color:#17A6E8;
+}
+.empowering p{
+color: #717B9E;
+width: 82%;
+margin: auto;
+margin-top: 20px;
+font-size: 17px;
+}
+.work_cards h3.text-center {
+margin-bottom: 48px;
+font-size: 29px;
+font-weight: 700;
+letter-spacing: .5px;
+}
+.card_area {
+border: 1px solid #00a5ec;
+border-radius: 60px 0;
+box-shadow: 2px 4px 12px 6px #00000040;
+padding: 20px;
+margin-bottom: 15px;
+height: 200px;
+}
+.card_area .icon img {
+  padding-right: 17px;
+}
+.card_area p{
+text-align:center;
+padding: 8px 0 0 0;
+margin:0;
+color: #2A2D35;
+font-weight:500;
+}
+.opp_cards {
+background-image: linear-gradient(to bottom, #C9EBFC, #ffffff);
+}
+.opp_card i.fa-solid {
+  opacity: 0.7;
+}
+.opp_cards h3 {
+color: #00A5EC;
+font-size: 29px;
+font-weight: 700;
+letter-spacing: .5px;
+margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.opp_cards p {
+text-align: center;
+color: #2A2D35;
+font-weight: 500;
+margin: 20px 0;
+margin-bottom: 30px;
+}
+.opp_card {
+cursor: pointer;
+background: #fff;
+padding: 24px 20px;
+border-radius: 14px;
+box-shadow: 0px 0px 6px 1px #00000026;
+margin-bottom: 10px;
+}
+.opp_card .first_row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.opp_card .duration {
+background: #E0F8EA;
+font-size: 13px;
+border-radius: 50px;
+padding: 4px 13px;
+color: #0F7137;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.opp_card .side_img {
+height: 41px;
+width: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 26px;
+box-shadow: 0px 0px 6px 1px #00000026;
+}
+.opp_card h5.job_title {
+margin-bottom: 0;
+font-weight: 600;
+color: #333333;
 }
 
-.App-link {
-  color: #61dafb;
+.opp_card span.com_name {
+color: #717B9E;
+font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.opp_card .second_row {
+margin-top: 25px;
+margin-bottom: 18px;
 }
+
+.opp_card .job_details {
+color: #717B9E;
+font-size: 13px;
+}
+
+
+
+.opp_card span.location,span.experience,span.pakage  {
+margin-right: 12px;
+}
+
+.opp_card .fourth_row {
+text-align: right;
+margin-top: 18px;
+}
+
+.opp_card button.apply_now {
+background: #18A6EE;
+border: 0;
+color: #ffffff;
+font-size: 13px;
+padding: 4px 14px;
+border-radius: 50px;
+margin-left: 10px;
+transition: all 0.5s ease;
+border: 1px solid transparent;
+}
+
+.opp_card button.view_detail {
+background: #fff;
+color: #18a6ee;
+font-size: 13px;
+padding: 4px 14px;
+border-radius: 50px;
+margin-left: 10px;
+border: 1px solid #18a6ee;
+transition: all 0.5s ease;
+}
+button.view_detail:hover {
+  background: #18a6ee;
+  color: #fff;
+}
+
+button.apply_now:hover {
+  background: #fff;
+  border: 0;
+  color: #18A6EE;
+  border: 1px solid #18A6EE;
+}
+a.view_more {
+display: block;
+text-align: center;
+text-decoration: none;
+color: #00A5EC;
+}
+
+.counter_cards {
+background-image: linear-gradient(135deg, #16A6EC, #5B63FF);
+}
+
+
+.counter_card {
+display:flex;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  height: 106px;
+}
+
+.counter_text {
+line-height: .5;
+padding-left: 12px;
+}
+
+.counter_text h2.number {
+margin-bottom: 2px;
+}
+.counter_card span.counter{
+  color:#16A6EC;
+  font-weight:700;
+ 
+}
+.counter_card .caption{
+  color:#333333;
+  line-height: 1;
+
+}
+@media(max-width:479px){
+  .about_banner_left h1 {
+    font-size: 43px;
+  
+}
+}
+
